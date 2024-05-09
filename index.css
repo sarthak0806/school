@@ -13,9 +13,25 @@
     height: 50px;
     border-radius: 50%;
     background-color: white;
+    cursor: pointer;
     /* You can add your logo image here */
   }
-
+  .logo:hover{
+    animation: logo 1s infinite;
+    border: 1.5px solid red;
+  }
+  @keyframes logo {
+    0%{
+      scale: 1;
+    }
+    50%{
+      scale: 1.3;
+    }
+    100%{
+      scale: 1;
+    }
+  }
+ 
   .login-btn {
     background-color: #4CAF50;
     color: white;
@@ -163,4 +179,180 @@
        width: 100%;
     }
   }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!--Main section--> */
+.image_section_heading{
+    font-size: 35px;
+    font-weight: 600;
+    position: absolute;
+    right: 6px;
+    width: 379px;
+    top: 123px;
+}
+.image_section_heading span{
+    font-size: 46px;
+    font-weight: bold;  
+    color: magenta;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+  }
+  .sub_cards{
+     width: 26%;
+     height: 300px;
+     margin: 3px;
+     background-color: black;
+     border-radius: 5px;
+     border-color: 2px solid red;
+     cursor: pointer;
+  }
+  .sub_cards:hover{
+     box-shadow: 1px 1px 10px 5px red;
+     scale: 1.5rem;
+  }
+  .image_section{
+     width: 100%;
+     height: 300px;
+     position: relative;
+     top: 109px;
+  }
+  .image{
+     width: 59%;
+     height: 469px;
+  }
+  .Main{
+     position: relative;
+     top: 309px;
+ }
+
+ @media screen and (max-width: 480px) {
+    .sub_cards{
+       display: block;
+       width: 94%;
+       margin: 30px;
+    }
+    .sub_cards :hover{
+       scale: 1.5rem;
+       box-shadow: 1px 1px 10px 5px red;
+       cursor: pointer;
+    }
+    .image{
+        position: relative;
+        top: 69px;
+       width: 100%;
+    }
+    .image_section_heading{
+        font-size: 35px;
+    font-weight: 600;
+    position: absolute;
+    right: 6px;
+    width: 379px;
+    top: 123px;
+    display: block;
+    position: absolute;
+    top: -100px;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+ /* <!--footer section--> link section */
+ footer{
+    position: relative;
+    bottom: 0;
+    top: 331px;
+    width: 100%;
+    background-color: black;
+    height: 350px;
+  }
+  footer a i{
+    color: #f1f1f1;
+  }
+  .icon_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 77px;
+    position: relative;
+    top: 35px;
+    font-size: 30px;
+  }
+  .link_section{
+    color: white;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    top: 20px;
+  }
+  .sub_parent_link{
+    font-size: 25px;
+    position: relative;
+    top: -10px;
+  }
+  .sub_link{
+    width: 33%;
+    position: relative;
+    left: 160px;
+    list-style-type: none;
+    position: relative;
+    top: 51px;
+  }
+  .sub_child_link{
+    cursor: pointer;
+  }
+  .sub_link a{
+    text-decoration: none;
+    color: white;
+  }
+  #Copy{
+    color: white;
+    display: flex;
+    position: relative;
+    top: 110px;
+    justify-content: center;
+  }
+  .signup_sub_level{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 51px;
+    left: 262px;
+  }
+  .signup_sub_level h2{
+    width: 315px;
+    color: #f1f1f1;
+  }
+  .signup_sub_level input{
+    width: 300px;
+  }
+  .signup_sub_level button{
+    width: 100px;
+  }
+
+
   
