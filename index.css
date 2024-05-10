@@ -228,6 +228,8 @@
      scale: 1.5rem;
   }
   .image_section{
+    display: flex;
+    justify-content: space-between;
      width: 100%;
      height: 300px;
      position: relative;
@@ -258,19 +260,25 @@
         top: 69px;
        width: 100%;
     }
-    .image_section_heading{
-        font-size: 35px;
+ }
+ @media screen and (max-width:945px) {
+  .image_section_heading{
+    font-size: 35px;
     font-weight: 600;
     position: absolute;
-    right: 6px;
-    width: 379px;
+    left: 10px;
+    width: 370px;
     top: 123px;
     display: block;
     position: absolute;
-    top: -100px;
+    top: -106px;
     }
- }
-
+    .image{
+      position: relative;
+      top: 69px;
+     width: 100%;
+  }
+    } 
 
 
 
@@ -281,80 +289,78 @@
 
 
  /* <!--footer section--> link section */
- footer{
-    position: relative;
-    bottom: 0;
-    top: 331px;
-    width: 100%;
-    background-color: black;
-    height: 350px;
-  }
-  footer a i{
-    color: #f1f1f1;
-   cursor: pointer;
-  }
-  .icon_section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 77px;
-    position: relative;
-    top: 35px;
-    font-size: 30px;
-    cursor: pointer;
-  }
-  .link_section{
-    color: white;
-    display: flex;
-    position: relative;
+ footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: flex;
+  position: relative;
+  top: 294px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  overflow: auto;
+}
+
+.icon_section {
+  display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    top: 20px;
-  }
-  .sub_parent_link{
-    font-size: 25px;
-    position: relative;
-    top: -10px;
-  }
-  .sub_link{
-    width: 33%;
-    position: relative;
-    left: 160px;
-    list-style-type: none;
-    position: relative;
-    top: 51px;
-  }
-  .sub_child_link{
-    cursor: pointer;
-  }
-  .sub_link a{
-    text-decoration: none;
-    color: white;
-  }
-  #Copy{
-    color: white;
-    display: flex;
-    position: relative;
-    top: 110px;
-    justify-content: center;
-  }
-  .signup_sub_level{
-    display: inline-flex;
-    justify-content: space-between;
     align-items: center;
-    position: relative;
-    top: 51px;
-    left: 262px;
-  }
-  .signup_sub_level h2{
-    width: 315px;
-    color: #f1f1f1;
-  }
-  .signup_sub_level input{
-    width: 300px;
-  }
-  .signup_sub_level button{
-    width: 100px;
+    height: 232px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.link_section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+  height: 233px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub_link {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sub_child_link {
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.signup_sub_level {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#Copy{
+  height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .icon_section,
+  .link_section,
+  .signup_sub_level {
+    width: 100%;
+    text-align: center;
   }
 
+  .sub_link {
+    width: 100%;
+  }
 
-  
+  .sub_child_link {
+    margin: 5px auto;
+  }
+}
+
